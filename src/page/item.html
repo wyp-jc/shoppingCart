@@ -1,0 +1,23 @@
+<section class="sec3">				
+				<dl>
+					<dt>
+						<div class="radio"  ng-class="{mark:itemkey.state}" ng-click="stateFn()"></div>
+					    <img src="{{itemkey.src}}" alt="" />
+					</dt>
+					<dd>
+						<ul>
+							<li><span>{{itemkey.name}}</span><span ng-click="del(index)" style="border-radius: 50%;width: 15px;line-height: 15px;text-align: center;height: 15px;display:inline-block;background: #ccc;margin-left: 35px;">&times;</span></li>
+							<li>{{itemkey.color}} <span>{{itemkey.size}}</span> </li>
+							<li>
+								<label for="">￥{{itemkey.price}}</label>
+								<div class="right">
+									<span ng-click="cal('-')">-</span>
+									<span>{{itemkey.num}}</span>
+									<span ng-click="cal('+')">+</span>
+								</div>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</section>
+			

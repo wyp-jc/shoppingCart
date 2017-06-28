@@ -1,0 +1,36 @@
+<div class="wrap">
+		<header class="header">
+			<a href="javascript:;"><</a>
+			<a href="javascript:;">购物车</a>
+			<a href="javascript:;"></a>				
+		</header>
+
+		<main class="main">			
+		<!-- 	<section class="sec1">
+				<div>
+					<span>你还没有登录,继续存在</span><button>登录</button>
+				</div>
+			</section> -->
+                <!-- -->
+			<item ng-repeat="i in data" itemkey="i" index="{{$index}}"></item>
+
+		</main>
+            <section class="sec2">
+			<div class="left" >
+				<div class="radio" ng-class="{mark:flag}" ng-click="all()"></div>
+			</div>
+				<div class="right">
+					<span>合计: <b>￥ {{total}}</b></span>
+					<span>结算 ({{buyNum}})</span>
+				</div>	
+			</section>
+
+
+    <footer class="footer">
+    	<a href="javascript:;" class="iconfont">&#xe64e;<span>购物车</span></a>
+    	<a href="javascript:;" class="iconfont">&#xe655;<span>购物车</span></a>
+    	<a href="javascript:;" class="iconfont">&#xe640;<span>购物车</span></a>
+    	<a href="javascript:;" class="iconfont">&#xe66b;<span>购物车</span></a>
+    </footer>
+
+	</div>	

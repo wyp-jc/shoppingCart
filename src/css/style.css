@@ -1,0 +1,186 @@
+/* line 1, style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+/* line 8, style.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; }
+
+/* line 14, style.scss */
+.header a, .main .sec1, .footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 19, style.scss */
+body {
+  overflow: hidden; }
+
+/* line 22, style.scss */
+a {
+  color: black; }
+
+/* line 25, style.scss */
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-flex;
+  flex-direction: column; }
+
+/* line 33, style.scss */
+.header {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  display: -webkit-flex; }
+  /* line 39, style.scss */
+  .header a {
+    flex: 1; }
+
+/* line 44, style.scss */
+.main {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll; }
+  /* line 51, style.scss */
+  .main .sec1 {
+    /*line-height: 45px;;*/
+    border-top: 1px dashed #ccc; }
+    /* line 55, style.scss */
+    .main .sec1 div {
+      width: 90%;
+      height: 45px; }
+      /* line 58, style.scss */
+      .main .sec1 div span {
+        margin-right: 15px; }
+      /* line 61, style.scss */
+      .main .sec1 div button {
+        background: red;
+        outline: none;
+        border: none;
+        width: 60px; }
+  /* line 70, style.scss */
+  .main .sec3 {
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px dashed #ccc;
+    border-top: 1px dashed #ccc; }
+    /* line 75, style.scss */
+    .main .sec3 dl {
+      width: 100%;
+      padding: 2%;
+      display: flex; }
+      /* line 79, style.scss */
+      .main .sec3 dl dt {
+        flex: 4;
+        width: 30px;
+        height: 100px; }
+        /* line 84, style.scss */
+        .main .sec3 dl dt .radio {
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          border: 1px solid black;
+          display: inline-block;
+          margin-bottom: 35%; }
+        /* line 92, style.scss */
+        .main .sec3 dl dt img {
+          width: 80%;
+          height: 100%; }
+      /* line 97, style.scss */
+      .main .sec3 dl dd {
+        flex: 6; }
+        /* line 99, style.scss */
+        .main .sec3 dl dd ul {
+          display: flex;
+          flex-direction: column; }
+          /* line 102, style.scss */
+          .main .sec3 dl dd ul li {
+            flex: 1;
+            margin-top: 10px;
+            margin-left: 6px; }
+            /* line 106, style.scss */
+            .main .sec3 dl dd ul li:nth-child(3) {
+              display: flex; }
+              /* line 108, style.scss */
+              .main .sec3 dl dd ul li:nth-child(3) label {
+                flex: 1; }
+              /* line 111, style.scss */
+              .main .sec3 dl dd ul li:nth-child(3) .right {
+                flex: 1; }
+                /* line 113, style.scss */
+                .main .sec3 dl dd ul li:nth-child(3) .right span {
+                  display: inline-block;
+                  width: 20px;
+                  height: 20px;
+                  text-align: center;
+                  line-height: 20px;
+                  border: 1px solid black; }
+
+/* line 133, style.scss */
+.footer {
+  width: 100%;
+  height: 45px;
+  padding-top: 5px;
+  /*background: red;*/
+  display: flex;
+  /*position: fixed;bottom: 0;/*/ }
+  /* line 144, style.scss */
+  .footer a {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+
+/* line 151, style.scss */
+.sec2 {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  /*position: fixed;*/
+  /*bottom: 45px;*/
+  /*background: lightgray; */
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  padding-left: 4%;
+  display: flex; }
+  /* line 162, style.scss */
+  .sec2 .left {
+    flex: 4; }
+    /* line 164, style.scss */
+    .sec2 .left .radio {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid black; }
+  /* line 173, style.scss */
+  .sec2 .right {
+    flex: 6; }
+    /* line 175, style.scss */
+    .sec2 .right b {
+      color: red; }
+    /* line 178, style.scss */
+    .sec2 .right i {
+      font-style: normal; }
+
+/* line 185, style.scss */
+.mark::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 8px;
+  transform: rotate(-45deg);
+  margin-left: 2px;
+  /*margin-top: 2px;*/
+  border-left: 2px solid black;
+  border-bottom: 2px solid black; }
+
+/*# sourceMappingURL=style.css.map */

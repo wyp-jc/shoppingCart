@@ -1,0 +1,196 @@
+*{
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html,body{
+    width: 100%;;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+%quanjuzhong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+      overflow: hidden;
+}
+a{
+    color:black;
+}
+.wrap{
+   
+    width: 100%;
+    height: 100%;
+
+    display:-webkit-flex;
+    flex-direction: column;
+}
+.header{
+    width: 100%;;
+    height: 45px;
+    line-height: 45px;;
+    display: -webkit-flex;
+
+    a{
+        flex:1;
+        @extend %quanjuzhong;
+    }
+}
+.main{
+    flex: 1;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    overflow-y:scroll;
+
+    .sec1{
+        /*line-height: 45px;;*/
+        border-top:1px dashed #ccc;;
+        @extend %quanjuzhong;
+        div{
+            width: 90%;;
+            height: 45px;
+            span{
+                margin-right: 15px;;
+            }
+            button{
+                background: red;
+                outline: none;
+                border:none;
+                width: 60px;
+            }
+        }
+    }
+    
+    .sec3{
+        width: 100%;;
+        height: 120px;;
+       border-bottom: 1px dashed #ccc;
+       border-top:1px dashed #ccc;
+        dl{           
+            width: 100%;;
+            padding: 2%;
+            display: flex;           
+            dt{
+
+                flex:4;
+                width:30px;
+                height: 100px;
+              .radio{
+                width: 15px;;
+                height: 15px;;
+                border-radius: 50%;
+                border:1px solid black;
+                display: inline-block;
+                margin-bottom: 35%;;
+            }
+                img{
+                    width: 80%;
+                    height: 100%;;
+                }
+            }
+            dd{
+                flex:6;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        flex:1;
+                        margin-top:10px;
+                        margin-left:6px;  
+                        &:nth-child(3){
+                           display: flex;
+                           label{
+                               flex:1;
+                           }  
+                           .right{
+                               flex:1;
+                               span{
+                                   display:inline-block;
+                                   width: 20px;;
+                                   height: 20px;
+                                   text-align: center;
+                                   line-height: 20px;;
+                                   border:1px solid black;
+                                   
+                               }
+                           }
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+    }
+}
+
+.footer{
+
+    width: 100%;
+    height: 45px;
+    padding-top: 5px;
+    /*background: red;*/
+    display: flex;
+    /*position: fixed;bottom: 0;/*/
+    
+    
+
+    a{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        @extend %quanjuzhong;
+    }
+}
+.sec2{
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+      /*position: fixed;*/
+      /*bottom: 45px;*/
+      /*background: lightgray; */
+      border-bottom:1px solid #ccc;
+      border-top:1px solid #ccc;
+      padding-left: 4%;
+      display: flex;
+      .left{
+        flex: 4;
+        .radio{        
+            margin-top: 10px;;
+            margin-bottom: 10px;;
+            width: 15px;;
+            height: 15px;;
+            border-radius: 50%;
+            border:1px solid black;
+        }
+    }
+        .right{
+            flex: 6;
+            b{
+                color:red;
+            }
+            i{
+                font-style: normal;
+            }
+        }
+    }
+
+
+.mark::after{
+   content: "";
+   display: block;
+   width: 10px;
+   height: 8px;
+   transform: rotate(-45deg);
+   margin-left: 2px;
+   /*margin-top: 2px;*/
+   border-left: 2px solid black;
+   border-bottom: 2px solid black;
+
+}    
